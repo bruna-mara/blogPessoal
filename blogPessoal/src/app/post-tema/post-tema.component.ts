@@ -12,10 +12,13 @@ export class PostTemaComponent implements OnInit {
 
   tema: Tema = new Tema()
   listaTemas: Tema[]
-  router: Router
+  router: any;
+ 
 
   constructor(
-    private temaService: TemaService
+    private temaService: TemaService,
+    
+    
   ) { }
 
   ngOnInit(){
